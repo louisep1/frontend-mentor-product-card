@@ -103,10 +103,13 @@ button {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transition: 0.5s;
 }
 
 button:hover {
+  cursor: pointer;
   background: hsl(158, 100%, 12%);
+  transition: 0.5s;
 }
 
 @media (max-width: 480px) {
