@@ -39,8 +39,8 @@ body {
 }
 
 .product-image {
-  background: url(../images/image-product-desktop.jpg) no-repeat center
-    center/cover;
+  background: url(./product-preview-card-component-main/images/image-product-desktop.jpg)
+    no-repeat center center/cover;
   border-radius: 10px 0 0 10px;
 }
 
@@ -105,7 +105,7 @@ button {
   gap: 10px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .box {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1.4fr;
@@ -114,8 +114,8 @@ button {
   }
 
   .product-image {
-    background: url(../images/image-product-mobile.jpg) no-repeat center
-      center/cover;
+    background: url(./product-preview-card-component-main/images/image-product-mobile.jpg)
+      no-repeat center center/cover;
     border-radius: 10px 10px 0 0;
   }
 
