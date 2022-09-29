@@ -39,9 +39,8 @@ body {
 }
 
 .product-image {
-  background: url(./product-preview-card-component-main/images/image-product-desktop.jpg)
-    no-repeat center center/cover;
   border-radius: 10px 0 0 10px;
+  max-width: 100%;
 }
 
 .product-info {
@@ -49,9 +48,6 @@ body {
   background: var(--white);
   display: flex;
   flex-direction: column;
-
-  /* display: grid; */
-  /* grid-template-columns: 1fr; */
   justify-content: space-around;
   border-radius: 0 10px 10px 0;
 }
@@ -121,9 +117,11 @@ button:hover {
   }
 
   .product-image {
-    background: url(./product-preview-card-component-main/images/image-product-mobile.jpg)
-      no-repeat center center/cover;
     border-radius: 10px 10px 0 0;
+    /* !!! this is useful for when using img in html (instead of as background in css): */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+    object-fit: cover;
+    height: 100%;
   }
 
   .product-info {
@@ -131,6 +129,3 @@ button:hover {
     padding: 20px;
   }
 }
-
-/* @media (max-width: 375px) {
-} */
